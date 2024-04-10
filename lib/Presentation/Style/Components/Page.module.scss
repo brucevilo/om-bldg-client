@@ -1,0 +1,41 @@
+.wrapper {
+    min-height: 100vh;
+    .toggle {
+        position: fixed;
+        bottom: 84px;
+        background-color: white;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid lightgray;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    aside {
+        width: 220px;
+        position: fixed;
+    }
+    main {
+        margin-left: 220px;
+        min-height: 100vh;
+        section {
+            padding: 48px;
+        }
+    }
+}
+
+@media print {
+    .wrapper {
+        .toggle {
+            display: none;
+        }
+        aside {
+            display: none;
+        }
+        main {
+            margin-left: 0;
+        }
+    }
+}

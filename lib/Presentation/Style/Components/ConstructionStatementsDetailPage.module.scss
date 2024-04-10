@@ -1,0 +1,38 @@
+@import "../Color.scss";
+
+.headers {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cs_detail {
+    font-size: 12px;
+    color: $gray-600;
+    margin-right: 16px;
+}
+
+.action_card {
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    width: 165px;
+    font-size: 14px;
+    padding: 1em;
+}
+
+.action_toggler {
+    background-color: white;
+    color: black;
+
+    &:hover,
+    &:focus {
+        color: black;
+        background-color: white;
+    }
+}
+
+.action {
+    &:hover {
+        cursor: pointer;
+    }
+}

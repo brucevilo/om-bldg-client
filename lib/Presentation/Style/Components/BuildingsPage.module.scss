@@ -1,0 +1,48 @@
+.search_bar_group {
+    width: 300px;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+
+    &:focus-within {
+        box-shadow: 0 0 0 0.2rem rgb(33 25 142 / 25%);
+        border-color: #5248df;
+    }
+}
+
+.search_bar {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+        border: none;
+    }
+}
+
+.search_icon {
+    background-color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown_filter {
+    width: 203px;
+}
+
+.line {
+    width: 10%;
+}
+
+.type {
+    width: 14%;
+}
+
+.facility {
+    width: 14%;
+    & > a {
+        text-decoration: none;
+    }
+}
+
+.location {
+    width: 62%;
+}

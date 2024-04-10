@@ -1,0 +1,62 @@
+@import "../Color.scss";
+
+.dropdown_filter {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 4;
+    max-height: 400px;
+    overflow: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    .form_check {
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-top: 4px;
+        min-width: 100px;
+    }
+}
+
+.search_filter {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    z-index: 2;
+    width: 200px;
+    transform: translateX(-142px);
+}
+
+.budget,
+.achievement,
+.difference,
+.action_button {
+    top: 0;
+    background-color: white;
+    position: sticky;
+    width: 100px;
+}
+
+.budget {
+    right: 299px;
+    z-index: 1;
+}
+
+.achievement {
+    right: 199px;
+    z-index: 1;
+}
+
+.difference {
+    right: 99px;
+    z-index: 3;
+}
+
+.action_button {
+    right: -1px;
+    z-index: 3;
+}
+
+.major_item {
+    max-width: 100px;
+}

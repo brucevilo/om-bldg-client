@@ -1,0 +1,49 @@
+@import './Color.scss';
+@import './Theme.scss';
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './OverrideBootstrap.scss';
+
+@media screen {
+    .print {
+        display: none;
+    }
+}
+@media print {
+    .modal-backdrop {
+        display: none !important;
+    }
+    .noPrint {
+        display: none !important;
+    }
+}
+
+.table {
+    table-layout: fixed;
+    td {
+        vertical-align: middle;
+    }
+}
+input {
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .table {
+        table-layout: auto;
+        white-space: nowrap;
+    }
+}
+
+.modal-90w {
+    max-width: 90%;
+}
+
+.estimation-modal {
+    // レイアウトが崩れる問題 (https://github.com/react-bootstrap/react-bootstrap/issues/4771) に対する workaround
+    .card-header-tabs {
+        margin: unset;
+    }
+}

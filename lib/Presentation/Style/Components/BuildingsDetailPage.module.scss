@@ -1,0 +1,48 @@
+@import "../Color.scss";
+
+.sub_title {
+    color: $gray-600;
+}
+
+.checkbox_label {
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+
+.bottom_table {
+    .kind {
+        width: 60px;
+    }
+
+    .document_number,
+    .contract_date,
+    .completion_date {
+        width: 150px;
+    }
+
+    .subject {
+        width: 500px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .contract_amount,
+    .designer_or_constructor {
+        width: 130px;
+    }
+
+    .order_year,
+    .budget_type,
+    .designers,
+    .manager {
+        width: 88px;
+    }
+}
+
+.design_table_wrapper {
+    .number {
+        width: 110px;
+    }
+}

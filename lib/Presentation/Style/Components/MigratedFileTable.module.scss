@@ -1,0 +1,15 @@
+.swapped_columns_table {
+    tbody {
+        display: flex !important;
+        tr {
+            display: block !important;
+            th {
+                display: block !important;
+            }
+            td {
+                display: block !important;
+            }
+        }
+    }
+}
+

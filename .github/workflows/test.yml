@@ -1,0 +1,17 @@
+name: test
+
+on: 'push'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18.x'
+      - run: yarn
+      - run: yarn type
+      - run: yarn lint
+      - run: yarn test

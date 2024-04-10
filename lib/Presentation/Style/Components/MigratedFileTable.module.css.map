@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,sBADkB,CAClB,KAAK,CAAC;EACF,OAAO,EAAE,eAAe;CAU3B;;AAZL,AAGQ,sBAHc,CAClB,KAAK,CAED,EAAE,CAAC;EACC,OAAO,EAAE,gBAAgB;CAO5B;;AAXT,AAKY,sBALU,CAClB,KAAK,CAED,EAAE,CAEE,EAAE,CAAC;EACC,OAAO,EAAE,gBAAgB;CAC5B;;AAPb,AAQY,sBARU,CAClB,KAAK,CAED,EAAE,CAKE,EAAE,CAAC;EACC,OAAO,EAAE,gBAAgB;CAC5B",
+    "sources": [
+        "MigratedFileTable.module.scss"
+    ],
+    "names": [],
+    "file": "MigratedFileTable.module.css"
+}

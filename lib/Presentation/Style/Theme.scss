@@ -1,0 +1,74 @@
+$border-radius: 5px;
+$font-family-sans-serif: "Noto Sans JP", "Yu Gothic", "游ゴシック", YuGothic,
+    "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$font-weight-base: 400;
+$font-weight-normal: $font-weight-base;
+
+$line-height-base: 2;
+.text-small {
+    font-size: 0.75rem;
+}
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+.font-weight-black {
+    font-weight: 900 !important;
+}
+
+/* buttons */
+$btn-border-radius: 3px;
+$btn-font-size: 0.75rem;
+$btn-font-weight: bold;
+$button-focus-border-color: transparent;
+$button-focus-box-shadow-size: transparent;
+.btn-link {
+    text-decoration: none !important;
+}
+
+/* forms */
+$input-placeholder-color: #757575;
+$input-border-color: #ededed;
+$input-border-radius: 3px;
+.form-control::placeholder {
+    font-size: 0.75rem;
+}
+.form-caution {
+    line-height: 0.75rem;
+    margin-bottom: 1.5rem;
+    color: red;
+}
+.form-switch {
+    margin-left: 1rem;
+}
+.form-check-label {
+    font-size: 0.75rem;
+}
+$form-check-input-margin-y: 0.5rem;
+.number {
+    text-align: right;
+}
+
+/* breadcrumbs */
+$breadcrumb-bg: none;
+$breadcrumb-padding-x: 0;
+.breadcrumb-item {
+    &.active {
+        color: #333!important;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+/* tables */
+$table-bg: white;
+$table-hover-bg: #F6F9FD;
+$table-accent-bg:#F6F9FD;
+
+/* anchor */
+$link-color: $blue;
+$link-decoration: underline;
+
+/* badge */
+$badge-padding-y: 0.5em;
+$badge-padding-x: 0.5em;

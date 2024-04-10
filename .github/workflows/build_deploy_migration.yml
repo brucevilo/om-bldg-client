@@ -1,0 +1,50 @@
+name: Build and deploy migration
+
+on:
+  push:
+    branches:
+    - feature/migration
+  workflow_dispatch:
+
+jobs:
+  build-deploy-migration:
+    env:
+      NEXT_PUBLIC_API_ORIGIN: 'https://migration-api.om-bldg.com'
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: 'ap-northeast-1'
+      IMAGE_URL: 405185812167.dkr.ecr.ap-northeast-1.amazonaws.com/migration-client:${{ github.sha }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '18.x'
+    - name: install, test
+      run: |
+        yarn
+        yarn run type
+        yarn run lint
+        yarn run test
+    - name: ecr login
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+    - name: Build and Push
+      run: |
+        docker build -t $IMAGE_URL --build-arg NEXT_PUBLIC_API_ORIGIN=$NEXT_PUBLIC_API_ORIGIN .
+        docker push $IMAGE_URL
+    - name: Render Amazon ECS task definition Next Container
+      id: render-next-container
+      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:
+        task-definition: migration-task-definition.json
+        container-name: migration-client
+        image: ${{ env.IMAGE_URL }}
+    - name: Deploy to Amazon ECS service
+      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+      with:
+        task-definition: ${{ steps.render-next-container.outputs.task-definition }}
+        service: migration-client
+        cluster: om-migration
+

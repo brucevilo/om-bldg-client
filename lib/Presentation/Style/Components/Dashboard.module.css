@@ -1,0 +1,22 @@
+.legends {
+  cursor: pointer;
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+.legends_radio {
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.legends_box {
+  width: 16px;
+  height: 16px;
+}
+
+.legend_selected {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=Dashboard.module.css.map */

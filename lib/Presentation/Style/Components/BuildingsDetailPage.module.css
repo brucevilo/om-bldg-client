@@ -1,0 +1,43 @@
+.sub_title {
+  color: #757575;
+}
+
+.checkbox_label {
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+
+.bottom_table .kind {
+  width: 60px;
+}
+
+.bottom_table .document_number,
+.bottom_table .contract_date,
+.bottom_table .completion_date {
+  width: 150px;
+}
+
+.bottom_table .subject {
+  width: 500px;
+}
+
+.bottom_table .subject a {
+  text-decoration: none;
+}
+
+.bottom_table .contract_amount,
+.bottom_table .designer_or_constructor {
+  width: 130px;
+}
+
+.bottom_table .order_year,
+.bottom_table .budget_type,
+.bottom_table .designers,
+.bottom_table .manager {
+  width: 88px;
+}
+
+.design_table_wrapper .number {
+  width: 110px;
+}
+/*# sourceMappingURL=BuildingsDetailPage.module.css.map */

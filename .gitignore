@@ -1,0 +1,7 @@
+node_modules
+_next
+yarn-error.log
+test-report.html
+.DS_Store
+.next
+tsconfig.tsbuildinfo

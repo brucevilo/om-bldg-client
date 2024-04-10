@@ -1,0 +1,10 @@
+.image_wrapper {
+  position: relative;
+}
+
+.image_wrapper .delete_button {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+/*# sourceMappingURL=DeleteButton.module.css.map */

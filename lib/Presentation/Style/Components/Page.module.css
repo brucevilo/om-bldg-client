@@ -1,0 +1,50 @@
+.wrapper {
+  min-height: 100vh;
+}
+
+.wrapper .toggle {
+  position: fixed;
+  bottom: 84px;
+  background-color: white;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid lightgray;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper aside {
+  width: 220px;
+  position: fixed;
+}
+
+.wrapper main {
+  margin-left: 220px;
+  min-height: 100vh;
+}
+
+.wrapper main section {
+  padding: 48px;
+}
+
+@media print {
+  .wrapper .toggle {
+    display: none;
+  }
+  .wrapper aside {
+    display: none;
+  }
+  .wrapper main {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=Page.module.css.map */

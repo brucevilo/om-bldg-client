@@ -1,0 +1,18 @@
+.swapped_columns_table tbody {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.swapped_columns_table tbody tr {
+  display: block !important;
+}
+
+.swapped_columns_table tbody tr th {
+  display: block !important;
+}
+
+.swapped_columns_table tbody tr td {
+  display: block !important;
+}
+/*# sourceMappingURL=MigratedFileTable.module.css.map */
